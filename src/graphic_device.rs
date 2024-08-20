@@ -75,6 +75,7 @@ fn create_device()
                         if (adapter_desc.Flags & DXGI_ADAPTER_FLAG_SOFTWARE.0 as u32) > 0
                         {
                             // skip software adapter
+                            adapter_index = adapter_index + 1;
                             continue;
                         }
 
